@@ -56,40 +56,40 @@
 
     <script  src="js/index.js"></script>
 
-<script>
-$(".navbar a, #myNavbar, a[href='#1'], a[href='#2'], a[href='#info'], a[href='#3'], footer a[href='#4'] a[href='#5']").on('click', function(event) {
-   
-		
-    if (this.hash !== "") {
-  
-      event.preventDefault();
+	<script type="text/javascript">
+	$(".navbar a, #myNavbar, a[href='#1'], a[href='#2'], a[href='#info'], a[href='#3'], footer a[href='#4'] a[href='#5']").on('click', function(event) {
+	   
+			
+	    if (this.hash !== "") {
+	  
+	      event.preventDefault();
 
-    
-      var hash = this.hash;
+	    
+	      var hash = this.hash;
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-     
-        window.location.hash = hash;
-      });
-    }
-  });
-</script>
-<script type="text/javascript">
-$(function(){
-  $(window).scroll(function(){
-    var winTop = $(window).scrollTop();
-    if(winTop >= 30){
-      $("body").addClass("sticky-header");
-    }else{
-      $("body").removeClass("sticky-header");
-    }
-  })
-})
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 900, function(){
+	   
+	     
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	</script>
+	<script type="text/javascript">
+	$(function(){
+	  $(window).scroll(function(){
+	    var winTop = $(window).scrollTop();
+	    if(winTop >= 30){
+	      $("body").addClass("sticky-header");
+	    }else{
+	      $("body").removeClass("sticky-header");
+	    }
+	  })
+	})
 
-</script>
+	</script>
 </body>
 
 </html>
